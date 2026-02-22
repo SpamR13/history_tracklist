@@ -19,7 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
 .site-header {
   position: fixed;
   top: 0;
@@ -33,7 +32,6 @@ body {
 }
 .container { width: 92%; max-width: 1200px; margin: 0 auto; }
 
-/* Навигация */
 .brand {
     display: flex;
     align-items: center;
@@ -60,8 +58,8 @@ body {
   display: flex; justify-content: space-between; align-items: center;
 }
 .brand {
-    display: flex;         /* логотип + текст в ряд */
-    align-items: center;   /* вертикальное выравнивание */
+    display: flex;         
+    align-items: center;   
     text-decoration: none;
 }
 .brand-dot {
@@ -75,7 +73,6 @@ body {
 }
 .nav-link:hover { color: #7a5ce7b6; background: rgba(255,255,255,.07); }
 
-/* Hero */
 .hero {
   position: relative;
   height: 78vh;
@@ -101,7 +98,6 @@ body {
 .accent { color: var(--accent); }
 .salient-subtitle { font-size: 1.15rem; color: #ddd; margin-bottom: 1.25rem; }
 
-/* CTA button */
 .cta-btn {
   display: inline-flex; align-items: center; justify-content: center;
   gap: .5rem;
@@ -119,32 +115,27 @@ body {
     overflow: hidden;
 }
 
-/* Первая волна - основная */
 .wave-soft {
     fill: linear-gradient(135deg, rgba(120,119,198,0.6), rgba(255,119,198,0.4));
     animation: gentleFloat 8s ease-in-out infinite;
 }
 
-/* Вторая волна - фоновая */
 .wave-subtle {
     fill: rgba(255,255,255,0.15);
     animation: gentleFloat 12s ease-in-out infinite reverse;
 }
 
-/* Плавная анимация волн */
 @keyframes gentleFloat {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-4px); }
 }
 
-/* Неоновое сияние при наведении */
 .neon-wave:hover .wave-primary {
     filter: url(#glow) drop-shadow(0 0 20px #3700ff);
 }
 
 .shape-divider-top svg { position: relative; display: block; width: calc(100% + 1.3px); height: 100px; }
 
-/* Posts / Cards */
 .posts-section { padding: 64px 0; }
 .salient-section-title {
   font-size: 2rem; margin-bottom: 1.25rem; text-align: left;
@@ -174,12 +165,10 @@ body {
   .card-image img { height: 160px; }
 }
 
-/* CTA section */
 .cta-section { padding: 64px 0; background: #0f0f0f; text-align: center; }
 .cta-content h2 { font-size: 2rem; margin-bottom: 1rem; }
 
-/* Footer */
 .salient-footer { background: #000; color: #ddd; padding: 28px 0; text-align: center; }
 
-/* Typography helpers */
 .small { font-size: .9rem; color: var(--muted); }
+
