@@ -1,4 +1,3 @@
-// Salient smooth scroll + header blur (управление цветом шапки при скролле)
 (function () {
   const header = document.querySelector('.site-header');
   const onScroll = () => {
@@ -12,9 +11,8 @@
   onScroll();
 })();
 
-// Инициализация Vanilla Tilt для карточек истории
 document.addEventListener('DOMContentLoaded', () => {
-  // Целевая группа карточек — .story-card
+ 
   if (typeof VanillaTilt !== 'undefined') {
     VanillaTilt.init(document.querySelectorAll('.story-card'), {
       max: 12,
@@ -24,3 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
